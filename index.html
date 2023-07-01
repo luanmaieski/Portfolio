@@ -18,38 +18,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
     <!-- Font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbarSupportedContent"  data-bs-offset="0" tabindex="0">
     <header>
         <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
             <div class="container">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <a class="navbar-brand" href="#"><img src="./src/assets/LOGO2.PNG" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+              aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto  mb-lg-0 text-center">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Início</a>
+                    <a class="nav-link active" aria-current="page" href="#scrollspyHeading1">Início</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#sobre">Sobre mim</a>
+                    <a class="nav-link" href="#scrollspyHeading2">Sobre mim</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#habilidades">Habilidades</a>
+                    <a class="nav-link" href="#scrollspyHeading3">Habilidades</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#experiencia">Experiência Profissional</a>
+                    <a class="nav-link" href="#scrollspyHeading4">Experiência Profissional</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#projetos">Projetos</a>
+                    <a class="nav-link" href="#scrollspyHeading5">Projetos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#contato">Contato</a>
+                    <a class="nav-link" href="#scrollspyHeading6">Contato</a>
                   </li>
                   
                 </ul>
@@ -57,15 +57,15 @@
             </div>
           </nav>
     </header>
-    <main class="">
-        <section id="#" class="hero">
+    <main class="" >
+        <section id="scrollspyHeading1" class="hero">
             <div class="container">
-                <h2>Seja bem-vindo(a) ao meu Portfólio de Projetos de Ciência de Dados</h2>
+                <h1>Seja bem-vindo(a) ao meu Portfólio de Projetos de Ciência de Dados</h2>
                 <p> Nessa página apresento projetos desenvolvidos a partir de dados públicos, com resoluções de problemas de negócio utilizando conceitos e ferramentas de Ciência de Dados.</p>
             </div>
         </section>
 
-        <section id="sobre" class="sobre pb-0">
+        <section id="scrollspyHeading2" class="sobre pb-0">
             <div class="container pb-0">
                 <h2 class="section-title text-center">Sobre Mim</h2>
                 <div class="row justify-content-center align-items-center">
@@ -86,22 +86,22 @@
             </div>
         </section>
 
-        <section id="habilidades" class="habilidades">
+        <section id="scrollspyHeading3" class="habilidades">
             <div class="container">
                 <h2 class="section-title text-center">Habilidades</h2>
                 <div class="row">
                     <div class="col-sm-6 col-md-4 p-3">
                         <div class="content-item">
                             <div class="icon-area">
-                                <img src="./src/assets/icons8-cloud-100.png" alt="">
+                                <img src="./src/assets/icons8-programing-100.png" alt="">
                             </div>
                             <div class="infos-area">
                                 <h3 class="item-title text-center">Linguagens de Programação e Banco de Dados</h3>
                                 <p>
                                     <ul>
                                         <li>Python com foco em análise de dados.</li>
-                                        <li>SQL</li>
-                                        <li>Banco de dados SQLite</li>
+                                        <li>Conceitos de ETL</li>
+                                        <li>SQL Language</li>
                                     </ul>
                                 </p>
                             </div>
@@ -110,7 +110,7 @@
                     <div class="col-sm-6 col-md-4 p-3">
                         <div class="content-item">
                             <div class="icon-area">
-                                <img src="./src/assets/icons8-cloud-100.png" alt="">
+                                <img src="./src/assets/icons8-machine-learning-100.png" alt="">
                             </div>
                             <div class="infos-area">
                                 <h3 class="item-title text-center">Estatística e Machine Learnig</h3>
@@ -129,7 +129,7 @@
                     <div class="col-sm-6 col-md-4 p-3">
                         <div class="content-item">
                             <div class="icon-area">
-                                <img src="./src/assets/icons8-cloud-100.png" alt="">
+                                <img src="./src/assets/icons8-tools-100.png" alt="">
                             </div>
                             <div class="infos-area">
                                 <h3 class="item-title text-center">Ferramentas, Técnicas e Visualização de Dados</h3>
@@ -148,7 +148,7 @@
                     <div class="col-sm-6 col-md-4 p-3">
                         <div class="content-item">
                             <div class="icon-area">
-                                <img src="./src/assets/icons8-cloud-100.png" alt="">
+                                <img src="./src/assets/icons8-engineering-100-2.png" alt="">
                             </div>
                             <div class="infos-area">
                                 <h3 class="item-title text-center">Engenharia de Software</h3>
@@ -157,6 +157,7 @@
                                         <li>Git, GitHub, Virtual Environment</li>
                                         <li>Deploy de modelos em Cloud Render</li>
                                         <li>Streamlit, Python API's</li>
+                                        <li>SQLite3 Database</li>
                                     </ul>
                                 </p>
                             </div>
@@ -165,7 +166,7 @@
                     <div class="col-sm-6 col-md-4 p-3">
                         <div class="content-item">
                             <div class="icon-area">
-                                <img src="./src/assets/icons8-cloud-100.png" alt="">
+                                <img src="./src/assets/icons8-soft-skills-100.png" alt="">
                             </div>
                             <div class="infos-area">
                                 <h3 class="item-title text-center">Soft Skills</h3>
@@ -185,21 +186,21 @@
             </div>
         </section>
 
-        <section id="experiencia" class="experiencia">
+        <section id="scrollspyHeading4" class="experiencia">
             <div class="container">
                 <h2 class="section-title text-center">Experiência Profissional</h2>
                 <p>Construção de soluções de dados para problemas de negócio, próximos dos desafios reais das empresas, utilizando dados públicos, onde abordei o problema desde a concepção do desafio de negócio até a publicação da solução, utilizando ferramentas de Ciência de Dados.</p>
             </div>
         </section>
 
-        <section id="projetos" class="projetos">
+        <section id="scrollspyHeading5" class="projetos">
             <div class="container">
                 <h2 class="section-title text-center">Projetos</h2>
                 <div class="row">
                     <div class="col-sm-6 col-md-4 p-3 ">
                         <div class="content-item">
-                            <div class="icon-area">
-                                icone
+                            <div class="img-area">
+                                <img src="./src/assets/Rossmann_img1.jpg" alt="">
                             </div>
                             <div class="infos-area">
                                 <h3 class="item-title text-center">Time-series Regression / Sales Forecasting</h3>
@@ -214,15 +215,14 @@
                                     <li>Git e GitHub.</li>
                                     <li>Flask, Render Cloud e Telegram.</li>
                                 </ul>
-                                <a href="#" class="link">Link 1</a>
-                                <a href="#" class="link">Link 2</a>
+                                <a href="https://github.com/luanmaieski/DataScience_Em_Producao" class="link" target="_blank">Saiba mais</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-4 p-3 ">
                         <div class="content-item">
-                            <div class="icon-area">
-                                icone
+                            <div class="img-area">
+                                <img src="./src/assets/delivery.jpg" alt="">
                             </div>
                             <div class="infos-area">
                                 <h3 class="item-title text-center">Management Panel for Delivery Marketplace</h3>
@@ -237,77 +237,7 @@
                                     <li>Git e GitHub.</li>
                                     <li>Streamlit.</li>
                                 </ul>
-                                <a href="#" class="link">Link 1</a>
-                                <a href="#" class="link">Link 2</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 p-3 ">
-                        <div class="content-item">
-                            <div class="icon-area">
-                                icone
-                            </div>
-                            <div class="infos-area">
-                                <h3 class="item-title text-center">Time-series Regression / Sales Forecasting</h3>
-                                <p>
-                                    Previsão de vendas para as próximas 6 semanas da rede de farmácias Rossmann, utilizando dados históricos das vendas para treinar os modelos de Machine Learning, e como forma de entrega um chatbot no Telegram. Realizado Ciclo 2 para rever e explorar possibilidades diferentes.
-                                </p>
-                                <h3 class="ferramentas-title text-center">Ferramentas usitilzada:</h3>
-                                <ul>
-                                    <li>Python, Pandas, Pyenv, Jupyter Notebook e PyCharm.</li>
-                                    <li>BorutaPy, NumPy, Scikit-Learn e SciPy.</li>
-                                    <li>Matplotlib e Seaborn</li>.
-                                    <li>Git, GitHub e Gitlab.</li>
-                                    <li>Flask, Heroku Cloud e Telegram.</li>
-                                </ul>
-                                <a href="#" class="link">Link 1</a>
-                                <a href="#" class="link">Link 2</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 p-3 ">
-                        <div class="content-item">
-                            <div class="icon-area">
-                                icone
-                            </div>
-                            <div class="infos-area">
-                                <h3 class="item-title text-center">Time-series Regression / Sales Forecasting</h3>
-                                <p>
-                                    Previsão de vendas para as próximas 6 semanas da rede de farmácias Rossmann, utilizando dados históricos das vendas para treinar os modelos de Machine Learning, e como forma de entrega um chatbot no Telegram. Realizado Ciclo 2 para rever e explorar possibilidades diferentes.
-                                </p>
-                                <h3 class="ferramentas-title text-center">Ferramentas usitilzada:</h3>
-                                <ul>
-                                    <li>Python, Pandas, Pyenv, Jupyter Notebook e PyCharm.</li>
-                                    <li>BorutaPy, NumPy, Scikit-Learn e SciPy.</li>
-                                    <li>Matplotlib e Seaborn</li>.
-                                    <li>Git, GitHub e Gitlab.</li>
-                                    <li>Flask, Heroku Cloud e Telegram.</li>
-                                </ul>
-                                <a href="#" class="link">Link 1</a>
-                                <a href="#" class="link">Link 2</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 p-3 ">
-                        <div class="content-item">
-                            <div class="icon-area">
-                                icone
-                            </div>
-                            <div class="infos-area">
-                                <h3 class="item-title text-center">Time-series Regression / Sales Forecasting</h3>
-                                <p>
-                                    Previsão de vendas para as próximas 6 semanas da rede de farmácias Rossmann, utilizando dados históricos das vendas para treinar os modelos de Machine Learning, e como forma de entrega um chatbot no Telegram. Realizado Ciclo 2 para rever e explorar possibilidades diferentes.
-                                </p>
-                                <h3 class="ferramentas-title text-center">Ferramentas usitilzada:</h3>
-                                <ul>
-                                    <li>Python, Pandas, Pyenv, Jupyter Notebook e PyCharm.</li>
-                                    <li>BorutaPy, NumPy, Scikit-Learn e SciPy.</li>
-                                    <li>Matplotlib e Seaborn</li>.
-                                    <li>Git, GitHub e Gitlab.</li>
-                                    <li>Flask, Heroku Cloud e Telegram.</li>
-                                </ul>
-                                <a href="#" class="link">Link 1</a>
-                                <a href="#" class="link">Link 2</a>
+                                <a href="https://github.com/luanmaieski/curry_company_project" class="link" target="_blank">Saiba mais</a>
                             </div>
                         </div>
                     </div>
@@ -315,9 +245,13 @@
             </div>
         </section>
 
-        <section id="contato" class="contato">
+        <section id="scrollspyHeading6" class="contato">
             <div class="container">
                 <h2 class="section-title text-center">Contato</h2>
+                <p>Sinta-se a vontade para entrar em contato.</p>
+                <a href="mailto:luanmaieski@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i>luanmaieski@gmail.com</a>
+                <a href="https://github.com/luanmaieski" target="_blank"><i class="fa-brands fa-square-github"></i>github.com/luanmaieski</a>
+                <a href="www.linkedin.com/in/luanmaieski" target="_blank"><i class="fa-brands fa-linkedin"></i>linkedin.com/in/luanmaieski</a>
             </div>
         </section>
 

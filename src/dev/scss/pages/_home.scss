@@ -4,8 +4,19 @@ html {
     font-size: 62.5%;
 }
 body {
+    
     header {
         font-family: 'Poppins', sans-serif;
+        .navbar-brand {
+            max-width: 150px;
+            img {
+                width: 100%;
+            }
+        }
+        .navbar {
+            background: linear-gradient(to bottom, rgb(255, 255, 255) 0%,rgba(249,249,255,1) 100%,rgba(240,249,255,1) 100%);
+            border-bottom: 1px solid lighten($primary-color, 35);
+        }
         .navbar-nav {
             font-size: 1.8rem;
             .nav-item {
@@ -13,8 +24,15 @@ body {
                 .active {
                     color: $primary-color !important;
                 }
-                &:hover {
+                &:nth-child(odd):hover {
                     background: linear-gradient(to right, $secondary-color, $primary-color);
+                    .nav-link {
+                        color: #fff !important;
+                        transition: all ease .4s;
+                    }
+                }
+                &:nth-child(even):hover {
+                    background: linear-gradient(to right, $primary-color,$secondary-color );;
                     .nav-link {
                         color: #fff !important;
                         transition: all ease .4s;
@@ -25,6 +43,9 @@ body {
     }
     main {
         font-family: 'Poppins', sans-serif;
+        p, li {
+            color: #7f888f;
+        }
         section {
             margin-top: 30px;
             .section-title {
@@ -50,11 +71,13 @@ body {
                 font-weight: 400;
             }
             ul {
-                list-style: none;
+                // list-style: none; 
+                list-style-position: inside;
+                text-align: start;
                 padding-left: 0;
                 li {
                     font-size: 1.6rem;
-                    text-align: center;
+                    // text-align: center;
                 }
             }
             a {
@@ -79,7 +102,11 @@ body {
         }
 
         .hero {
-            margin-top: 70px;
+            margin-top: 90px;
+            h1 {
+                font-size: 4.5rem;
+                font-weight: 600;
+            }
         }
 
         .projetos, .habilidades {
@@ -91,6 +118,10 @@ body {
 
                 &:hover {
                     box-shadow: 0px 0px 7px 3px rgba(0,178,255,0.33);
+                    .img-area img{
+                        transform: scale(1.075);
+                    }
+                    
                 }
                 .infos-area {
                     padding: 10px 0;
@@ -114,11 +145,30 @@ body {
                         padding: 10px 15px;
                         color: #fff;
                         margin: 20px  auto;
+                        transition: all ease .8s;
+                        &:hover {
+                            background: linear-gradient(to right, $primary-color,$secondary-color );
+                        }
                     }
                 }
                 .icon-area {
                     text-align: center;
-                    margin-bottom: 20px;
+                    margin: 20px auto;
+                    max-width: 60px;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .img-area {
+                    overflow: hidden;
+                    text-align: center;
+                    margin: 20px auto;
+                    max-width: 300px;
+                    img {
+                        width: 100%;
+                        transition: all ease .5s;
+
+                    }
                 }
                 
             }
@@ -146,8 +196,52 @@ body {
         }
     }
 
+    .contato {
+        div {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            a {
+                color: #7f888f;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                i {
+                    margin-right: 10px;
+                    font-size: 30px;
+                }
+                &:hover {
+                    // background-color: linear-gradient(to right, $secondary-color, $primary-color);
+                    background-image: linear-gradient(to right, $primary-color, $secondary-color);
+  
+                    /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+                    background-clip: text;
+                    -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+                  
+                    /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+                    -webkit-text-fill-color: transparent;
+                    i {
+                        // background-color: linear-gradient(to right, $secondary-color, $primary-color);
+                        background-image: linear-gradient(to right, $secondary-color, $primary-color);
+  
+                        /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+                        background-clip: text;
+                        -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+                      
+                        /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+
     footer {
         margin-top: 50px;
+        text-align: center;
+        font-size: 1.6rem;
     }
 
 }
